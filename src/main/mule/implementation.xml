@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="implementationFlow" doc:id="ec9d6ca3-2594-45a3-b7ae-57ac343a29ed" >
+		<logger level="INFO" doc:name="Logger" doc:id="1fbb7c0a-7a8b-43e4-b342-f2de88ee9723" message="#[payload]"/>
+		<set-payload value='"hello world....how are you"' doc:name="Set Payload" doc:id="192ea22c-9b78-4416-b6b8-827821778fcb" />
+		<logger level="INFO" doc:name="Logger" doc:id="d65c02e4-dbe8-49c0-900d-6ae1dd25cfb4" message="#[payload]"/>
+	</flow>
+</mule>
